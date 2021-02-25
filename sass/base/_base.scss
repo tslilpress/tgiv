@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+
+    @include respond(tab-land) { // < 1200px
+        font-size: 56.25%;  // 1 rem = 9px, 9/16 = .5625 (56.25%)
+    }
+
+    @include respond(tab-port) { // < 900px
+        font-size: 50%; // 1 rem = 8px, 8/16 = .5 (50%)
+    }
+
+
+    @include respond(big-desktop) {
+        font-size: 75%; // 1rem = 12, 12/16 = .75 (75%)
+    }
+}
+
+body {
+    
+}
+
