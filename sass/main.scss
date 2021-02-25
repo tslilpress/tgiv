@@ -1,24 +1,3 @@
-@import "abstracts/functions";
-@import "abstracts/mixins";
-@import "abstracts/variables";
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap');
 
-@import "base/animations";
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
-
-@import "components/button";
-@import "components/bg-video";
-@import "components/card";
-@import "components/composition";
-@import "components/feature-box";
-@import "components/form";
-@import "components/popup";
-@import "components/story";
-
-@import "layout/footer";
-@import "layout/grid";
-@import "layout/header";
-@import "layout/navigation";
-
-@import "pages/home";
+@import "base/typography"
