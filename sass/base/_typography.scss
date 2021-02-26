@@ -24,4 +24,17 @@ body {
     &--blue {
         color: var(--color-blue);
     }
+
+    &--white {
+        color: #fff;
+    }
+}
+
+.paragraph {
+    font-size: 2vw;
+    text-align: center;
+
+    &--white {
+        color: white;
+    }
 }

@@ -59,6 +59,14 @@ body {
   font-weight: 700; }
   .heading-main--blue {
     color: var(--color-blue); }
+  .heading-main--white {
+    color: #fff; }
+
+.paragraph {
+  font-size: 2vw;
+  text-align: center; }
+  .paragraph--white {
+    color: white; }
 
 .header {
   display: flex;
@@ -107,3 +115,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.section-about {
+  display: flex; }
+  .section-about__text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    width: 50%;
+    background-color: var(--color-blue); }
+  .section-about__image {
+    width: 50%;
+    height: 100vh;
+    background-image: url("../../img/sandwich-about.jpg");
+    background-position: center; }

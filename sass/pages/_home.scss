@@ -6,3 +6,24 @@
     justify-content: center;
     align-items: center;
 }
+
+.section-about {
+    display: flex;
+
+    &__text-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10%;
+        width: 50%;
+        background-color: var(--color-blue);
+    }
+
+    &__image {
+        width: 50%;
+        height: 100vh;
+        background-image: url("../../img/sandwich-about.jpg");
+        background-position: center;
+    }
+}
