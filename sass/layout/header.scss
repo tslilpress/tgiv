@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('../../img/tgiv-header-pic-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+    &__text-box {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20rem;
+    }
+}

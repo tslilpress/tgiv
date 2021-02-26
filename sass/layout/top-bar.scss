@@ -1,0 +1,33 @@
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: var(--color-pink);
+    width: 100%;
+    height: 5rem;
+
+    
+    &__info-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 30%;
+        font-size: 1.2vw;
+        padding: 0 2rem;
+        margin-left: 1rem;
+        color: var(--color-blue);
+    }
+
+    &__icon-box {
+        display: flex;
+        padding: 0 2rem;
+        justify-content: space-between;
+        width: 8%;
+        margin-right: 1rem;
+    }
+
+    &__icon {
+        fill: var(--color-blue);
+        width: 1.8vw;
+    }
+}
