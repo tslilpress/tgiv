@@ -1,7 +1,7 @@
 .section-welcome {
     background-color: #fff;
     width: 100%;
-    height: 20vh;
+    height: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,6 +9,7 @@
 
 .section-about {
     display: flex;
+    height: 75vh;
 
     &__text-box {
         display: flex;
@@ -22,8 +23,46 @@
 
     &__image {
         width: 50%;
-        height: 100vh;
         background-image: url("../../img/sandwich-about.jpg");
         background-position: center;
+    }
+}
+
+.section-menu {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    &__container {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    &__starters {
+       
+    }
+
+    &__mains {
+ 
+    }
+
+    &__list {
+
+    }
+
+    &__item {
+
+    }
+
+    &__title {
+
+    }
+
+    &__description {
+
+    }
+
+    &__price {
+
     }
 }

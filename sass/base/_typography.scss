@@ -1,5 +1,5 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Josefin Slab', serif;
     font-weight: 400;
 }
 
@@ -13,7 +13,7 @@ body {
 .heading-secondary {
     font-size: 3vw;
     color: #fff;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .heading-main {
@@ -28,11 +28,37 @@ body {
     &--white {
         color: #fff;
     }
+
+    &--brown {
+        color: var(--color-brown);
+    }
 }
+
+.heading-main-secondary {
+    font-size: 3vw;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 600;
+
+    &--blue {
+        color: var(--color-blue);
+    }
+
+    &--white {
+        color: #fff;
+    }
+
+    &--brown {
+        color: var(--color-brown);
+    }
+}
+
+
 
 .paragraph {
     font-size: 2vw;
     text-align: center;
+    font-weight: 300;
+    line-height: 5vh;
 
     &--white {
         color: white;
