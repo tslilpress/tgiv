@@ -39,7 +39,8 @@
     }
     
     &__starters {
-       
+       display: flex;
+       flex-direction: column;
     }
 
     &__mains {
@@ -47,7 +48,7 @@
     }
 
     &__list {
-
+        list-style: none;
     }
 
     &__item {

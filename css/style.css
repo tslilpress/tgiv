@@ -87,6 +87,9 @@ body {
 .margin-bottom-small {
   margin-bottom: 2rem; }
 
+.margin-top-small {
+  margin-top: 2rem; }
+
 .header {
   display: flex;
   justify-content: center;
@@ -158,3 +161,8 @@ body {
   .section-menu__container {
     display: flex;
     justify-content: space-around; }
+  .section-menu__starters {
+    display: flex;
+    flex-direction: column; }
+  .section-menu__list {
+    list-style: none; }
