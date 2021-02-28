@@ -74,10 +74,31 @@
         font-size: 1.3vw;
         font-weight: 400;
         color: var(--color-brown);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 
     &__choice-box {
         display: flex;
         justify-content: space-around;
+    }
+}
+
+.section-hours-location {
+    height: 100vh;
+    display: flex;
+    
+
+    &__google-map {
+        width: 50%;
+        height: 100%;
+    }
+
+    &__text-box {
+        width: 50%;
+        height: 100%;
+        background-color: var(--color-pink);
+        text-align: center;
     }
 }

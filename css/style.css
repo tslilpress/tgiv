@@ -190,7 +190,22 @@ body {
   .section-menu__price {
     font-size: 1.3vw;
     font-weight: 400;
-    color: var(--color-brown); }
+    color: var(--color-brown);
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
   .section-menu__choice-box {
     display: flex;
     justify-content: space-around; }
+
+.section-hours-location {
+  height: 100vh;
+  display: flex; }
+  .section-hours-location__google-map {
+    width: 50%;
+    height: 100%; }
+  .section-hours-location__text-box {
+    width: 50%;
+    height: 100%;
+    background-color: var(--color-pink);
+    text-align: center; }
