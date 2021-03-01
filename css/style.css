@@ -201,7 +201,7 @@ body {
 .section-hours-location {
   height: 100vh;
   display: flex; }
-  .section-hours-location__google-map {
+  .section-hours-location__gmap {
     width: 50%;
     height: 100%; }
   .section-hours-location__text-box {
@@ -209,3 +209,8 @@ body {
     height: 100%;
     background-color: var(--color-pink);
     text-align: center; }
+  .section-hours-location__link, .section-hours-location:link, .section-hours-location:visited {
+    color: var(--color-blue);
+    font-size: 1.8vw;
+    text-decoration: none;
+    font-weight: 300; }
