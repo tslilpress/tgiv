@@ -83,6 +83,10 @@ body {
   line-height: 5vh; }
   .paragraph--white {
     color: white; }
+  .paragraph--blue {
+    color: var(--color-blue); }
+  .paragraph--brown {
+    color: var(--color-brown); }
 
 .margin-bottom-x-small {
   margin-bottom: 1rem; }
@@ -90,11 +94,59 @@ body {
 .margin-bottom-small {
   margin-bottom: 3.2rem; }
 
-.margin-top-small {
-  margin-top: 2rem; }
+.margin-bottom-med {
+  margin-bottom: 5rem; }
 
 .margin-top-x-small {
   margin-top: 1rem; }
+
+.margin-top-small {
+  margin-top: 2rem; }
+
+.margin-top-lg {
+  margin-top: 10rem; }
+
+.btn, .btn:link, .btn:visited {
+  display: inline-block;
+  width: 17rem;
+  padding: 1.5rem 2.5rem 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 10rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .4s; }
+
+.btn:hover {
+  background-color: var(--color-brown);
+  transform: translateY(-0.1rem); }
+  .btn:hover::after {
+    transform: scaleX(1) scaleY(1.2);
+    opacity: 0; }
+
+.btn:active, .btn:focus {
+  outline: none; }
+
+.btn--blue {
+  background-color: var(--color-blue);
+  color: #fff; }
+  .btn--blue::after {
+    background-color: var(--color-blue); }
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s; }
 
 .header {
   display: flex;
@@ -209,8 +261,14 @@ body {
     height: 100%;
     background-color: var(--color-pink);
     text-align: center; }
+  .section-hours-location__hours {
+    font-weight: 500;
+    display: flex;
+    flex-direction: column; }
   .section-hours-location__link, .section-hours-location:link, .section-hours-location:visited {
+    display: flex;
+    flex-direction: column;
     color: var(--color-blue);
     font-size: 1.8vw;
     text-decoration: none;
-    font-weight: 300; }
+    font-weight: 400; }

@@ -63,4 +63,12 @@ body {
     &--white {
         color: white;
     }
+
+    &--blue {
+        color: var(--color-blue);
+    }
+
+    &--brown {
+        color: var(--color-brown);
+    }
 }
