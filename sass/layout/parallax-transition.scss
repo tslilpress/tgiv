@@ -1,0 +1,11 @@
+.parallax-transition {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+
+    &--donuts {
+        background-image: url("../../img/donuts.jpg");
+    }
+}
