@@ -161,49 +161,92 @@ body {
     align-items: center;
     margin-top: 20rem; }
 
-.navigation__button {
+.navigation {
   display: flex;
+  flex-direction: column;
   position: absolute;
-  top: 1.2rem;
-  background-color: orange;
-  height: 3rem;
-  width: 3rem;
-  text-align: center;
-  cursor: pointer; }
-
-.navigation__nav {
-  height: 50vh;
   width: 100vw;
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--color-pink);
-  transition: all 2s ease-in; }
-
-.navigation__item {
-  margin: 1rem; }
-
-.navigation__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  list-style-type: none;
-  text-align: center; }
-
-.navigation__link:link, .navigation__link:visited {
-  font-family: 'Amatic SC', cursive;
-  font-size: 4rem;
-  font-weight: 700;
-  text-decoration: none;
-  color: var(--color-blue); }
-
-.navigation__link:hover, .navigation__link:active {
-  color: var(--color-brown); }
-
-.navigation__checkbox:checked ~ .navigation__nav {
-  height: 100%; }
+  background-color: var(--color-pink); }
+  .navigation__checkbox {
+    display: flex;
+    align-self: flex-end;
+    display: none; }
+  .navigation__button {
+    display: flex;
+    align-self: flex-end;
+    position: fixed;
+    top: 1.2rem;
+    margin-right: 2rem;
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    cursor: pointer;
+    z-index: 3000; }
+  .navigation__nav {
+    height: 0vh;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-pink);
+    transition: all 1s ease-out; }
+  .navigation__item {
+    margin: 1rem; }
+  .navigation__list {
+    display: flex;
+    height: 0vh;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease-out; }
+  .navigation__link:link, .navigation__link:visited {
+    font-family: 'Amatic SC', cursive;
+    font-size: 4rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-blue); }
+  .navigation__link:hover, .navigation__link:active {
+    color: var(--color-brown); }
+  .navigation__checkbox:checked ~ .navigation__nav {
+    height: 100vh; }
+  .navigation__checkbox:checked ~ .navigation__nav .navigation__list {
+    visibility: visible;
+    opacity: 1; }
+  .navigation__icon {
+    position: relative;
+    margin-top: 1.2rem; }
+    .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+      width: 3rem;
+      height: .2rem;
+      background-color: var(--color-blue);
+      display: flex;
+      z-index: 3000;
+      transition: all .2s; }
+    .navigation__icon::before, .navigation__icon::after {
+      content: "";
+      position: absolute; }
+    .navigation__icon::before {
+      top: -.8rem; }
+    .navigation__icon::after {
+      top: .8rem; }
+  .navigation__button:hover .navigation__icon::after {
+    top: 1rem; }
+  .navigation__button:hover .navigation__icon::before {
+    top: -1rem; }
+  .navigation__checkbox:checked ~ .navigation__button .navigation__icon {
+    background-color: transparent; }
+  .navigation__checkbox:checked ~ .navigation__button .navigation__icon::before {
+    top: 0;
+    transform: rotate(135deg); }
+  .navigation__checkbox:checked ~ .navigation__button .navigation__icon::after {
+    top: 0;
+    transform: rotate(-135deg); }
 
 .parallax-transition {
   height: 100vh;
@@ -220,7 +263,8 @@ body {
   position: fixed;
   background-color: var(--color-pink);
   width: 100%;
-  height: 5rem; }
+  height: 5rem;
+  z-index: 2000; }
   .top-bar__info-box {
     display: flex;
     align-items: center;
@@ -234,8 +278,8 @@ body {
     display: flex;
     padding: 0 2rem;
     justify-content: space-between;
-    width: 12%;
-    margin-right: 3rem; }
+    width: 8%;
+    margin-right: 6rem; }
   .top-bar__icon {
     fill: var(--color-blue);
     width: 1.8vw; }
