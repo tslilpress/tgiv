@@ -1,0 +1,65 @@
+.navigation {
+
+    &__checkbox {
+        // display: none;
+    }
+
+    &__button {
+        display: flex;
+        position: absolute;
+        top: 1.2rem;
+        background-color: orange;
+        height: 3rem;
+        width: 3rem;
+        text-align: center;
+        cursor: pointer;
+    }
+
+  
+    &__nav {
+        height: 50vh;
+        width: 100vw;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // visibility: hidden;
+        // opacity: 0;
+        background-color: var(--color-pink);
+        transition: all 2s ease-in;
+    }
+
+    &__item {
+        margin: 1rem;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            font-family:'Amatic SC', cursive;;
+            font-size: 4rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: var(--color-blue);
+        }
+
+        &:hover,
+        &:active {
+            color: var(--color-brown);
+        }
+    }
+
+    &__checkbox:checked ~ &__nav {
+        height: 100%;
+    
+    }
+}
