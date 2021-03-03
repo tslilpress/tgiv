@@ -119,3 +119,14 @@
             font-weight: 400;
     }
 }
+
+.section-catering {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__text-box {
+      text-align: center;
+    }
+}

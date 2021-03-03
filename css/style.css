@@ -204,7 +204,7 @@ body {
     text-align: center;
     visibility: hidden;
     opacity: 0;
-    transition: all 1s ease-out; }
+    transition: all .8s ease-out; }
   .navigation__link:link, .navigation__link:visited {
     font-family: 'Amatic SC', cursive;
     font-size: 4rem;
@@ -256,6 +256,8 @@ body {
   display: flex; }
   .parallax-transition--donuts {
     background-image: url("../../img/donuts.jpg"); }
+  .parallax-transition--fried {
+    background-image: url("../../img/fried.jpg"); }
 
 .top-bar {
   display: flex;
@@ -282,7 +284,7 @@ body {
     margin-right: 6rem; }
   .top-bar__icon {
     fill: var(--color-blue);
-    width: 1.8vw; }
+    width: 2rem; }
 
 .section-welcome {
   background-color: #fff;
@@ -368,3 +370,11 @@ body {
     font-size: 1.8vw;
     text-decoration: none;
     font-weight: 400; }
+
+.section-catering {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .section-catering__text-box {
+    text-align: center; }
