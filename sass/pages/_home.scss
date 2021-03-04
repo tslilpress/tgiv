@@ -59,19 +59,19 @@
     }
 
     &__title {
-        font-size: 2.3vw;
+        font-size: 2.8rem;
         color: var(--color-blue);
         font-weight: 600;
     }
 
     &__description {
-        font-size: 1.7vw;
+        font-size: 2.2rem;
         font-weight: 400;
         color: var(--color-brown);
     }
 
     &__price {
-        font-size: 1.3vw;
+        font-size: 1.8rem;
         font-weight: 400;
         color: var(--color-brown);
         display: flex;
@@ -82,6 +82,27 @@
     &__choice-box {
         display: flex;
         justify-content: space-around;
+    }
+}
+
+.section-pick-up-info {
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--color-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__link,
+        &:link,
+        &:visited {
+            color: #fff;
+            font-size: 2rem;
+            text-decoration: none;
+            font-weight: 400;
+            margin-top: 1rem;
+
     }
 }
 
@@ -114,19 +135,35 @@
             display: flex;
             flex-direction: column;
             color: var(--color-blue);
-            font-size: 1.8vw;
+            font-size: 2.2rem;
             text-decoration: none;
             font-weight: 400;
+
     }
+
 }
 
 .section-catering {
     height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+
 
     &__text-box {
       text-align: center;
     }
+
+    &__link,
+        &:link,
+        &:visited {
+            color: #fff;
+            font-size: 2rem;
+            text-decoration: none;
+            font-weight: 700;
+            margin-top: 1rem;
+
+}
+
 }

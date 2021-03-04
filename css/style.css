@@ -46,16 +46,16 @@ body {
 .heading-primary {
   font-family: 'Amatic SC', cursive;
   font-weight: 700;
-  font-size: 10vw;
+  font-size: 10rem;
   color: #fff; }
 
 .heading-secondary {
-  font-size: 3vw;
+  font-size: 3rem;
   color: #fff;
   font-weight: 700; }
 
 .heading-main {
-  font-size: 6vw;
+  font-size: 7rem;
   font-family: 'Amatic SC', cursive;
   font-weight: 700; }
   .heading-main--blue {
@@ -66,7 +66,7 @@ body {
     color: var(--color-brown); }
 
 .heading-main-secondary {
-  font-size: 3.4vw;
+  font-size: 3.5rem;
   font-family: 'Josefin Slab', serif;
   font-weight: 700; }
   .heading-main-secondary--blue {
@@ -77,10 +77,13 @@ body {
     color: var(--color-brown); }
 
 .paragraph {
-  font-size: 2vw;
+  font-size: 2.8rem;
   text-align: center;
   font-weight: 300;
   line-height: 5vh; }
+  .paragraph--bold {
+    font-weight: 700;
+    font-size: 3rem; }
   .paragraph--white {
     color: white; }
   .paragraph--blue {
@@ -258,6 +261,8 @@ body {
     background-image: url("../../img/donuts.jpg"); }
   .parallax-transition--fried {
     background-image: url("../../img/fried.jpg"); }
+  .parallax-transition--catering-burger {
+    background-image: url("../../img/catering-burger.jpg"); }
 
 .top-bar {
   display: flex;
@@ -330,15 +335,15 @@ body {
   .section-menu__item {
     line-height: 4vh; }
   .section-menu__title {
-    font-size: 2.3vw;
+    font-size: 2.8rem;
     color: var(--color-blue);
     font-weight: 600; }
   .section-menu__description {
-    font-size: 1.7vw;
+    font-size: 2.2rem;
     font-weight: 400;
     color: var(--color-brown); }
   .section-menu__price {
-    font-size: 1.3vw;
+    font-size: 1.8rem;
     font-weight: 400;
     color: var(--color-brown);
     display: flex;
@@ -347,6 +352,21 @@ body {
   .section-menu__choice-box {
     display: flex;
     justify-content: space-around; }
+
+.section-pick-up-info {
+  width: 100vw;
+  height: 15vh;
+  background-color: var(--color-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .section-pick-up-info__link, .section-pick-up-info:link, .section-pick-up-info:visited {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: 400;
+    margin-top: 1rem; }
 
 .section-hours-location {
   height: 100vh;
@@ -367,14 +387,21 @@ body {
     display: flex;
     flex-direction: column;
     color: var(--color-blue);
-    font-size: 1.8vw;
+    font-size: 2.2rem;
     text-decoration: none;
     font-weight: 400; }
 
 .section-catering {
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
   .section-catering__text-box {
     text-align: center; }
+  .section-catering__link, .section-catering:link, .section-catering:visited {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 1rem; }

@@ -6,18 +6,18 @@ body {
 .heading-primary {
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
-    font-size: 10vw;
+    font-size: 10rem;
     color: #fff;
 }
 
 .heading-secondary {
-    font-size: 3vw;
+    font-size: 3rem;
     color: #fff;
     font-weight: 700;
 }
 
 .heading-main {
-    font-size: 6vw;
+    font-size: 7rem;
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
 
@@ -35,7 +35,7 @@ body {
 }
 
 .heading-main-secondary {
-    font-size: 3.4vw;
+    font-size: 3.5rem;
     font-family: 'Josefin Slab', serif;
     font-weight: 700;
 
@@ -55,10 +55,15 @@ body {
 
 
 .paragraph {
-    font-size: 2vw;
+    font-size: 2.8rem;
     text-align: center;
     font-weight: 300;
     line-height: 5vh;
+
+    &--bold {
+        font-weight: 700;
+        font-size: 3rem;
+    }
 
     &--white {
         color: white;
