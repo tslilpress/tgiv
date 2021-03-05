@@ -16,10 +16,10 @@
         </label>
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Menu</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Hours & Location</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Catering</a></li>
+                <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+                <li class="navigation__item"><a href="#menu" class="navigation__link">Menu</a></li>
+                <li class="navigation__item"><a href="#hours-and-location" class="navigation__link">Hours & Location</a></li>
+                <li class="navigation__item"><a href="#catering-and-contact" class="navigation__link">Catering</a></li>
             </ul>
         </nav>
     </div>
@@ -59,7 +59,7 @@
         </section>
 
         <!-- ABOUT SECTION -->
-        <section class="section-about">
+        <section class="section-about" id="about">
             <div class="section-about__text-box">
                 <h3 class="heading-main heading-main--white margin-bottom-small">About</h3>
                 <p class="paragraph paragraph--white">Thank Goodness It's Vegan started out as a food truck located in Chester NY.  Exactly one year later, TGIV, the restaurant opened! Serving up 100% vegan food that is more than just a standard salad.</p>
@@ -68,7 +68,7 @@
         </section>
 
         <!-- MENU SECTION -->
-        <section class="section-menu">
+        <section class="section-menu" id="menu">
             <h3 class="heading-main heading-main--blue margin-bottom-small margin-top-small">Menu</h3>
             <div class="section-menu__container">
                 <div class="section-menu__starters">
@@ -228,12 +228,12 @@
             <p class="paragraph paragraph--white">Call ahead for a pick-up or come dine with us!</p>
             <a href="tel:(845)469-4423" target="_blank" class="section-pick-up-info__link">(845)469-4423</a>
         </section>
-        
+
         <!-- PARALLAX TRANSITION -->
         <div class="parallax-transition parallax-transition--fried"></div>
 
         <!-- HOURS AND LOCATION SECTION -->
-        <section class="section-hours-location">
+        <section class="section-hours-location" id="hours-and-location">
             <iframe class="section-hours-location__gmap" src="https://snazzymaps.com/embed/294348"  style="border:none;"></iframe>
             <div class="section-hours-location__text-box">
                 <h3 class="heading-main heading-main--brown margin-bottom-med margin-top-lg">Hours & Location</h3>
@@ -253,7 +253,7 @@
          <div class="parallax-transition parallax-transition--donuts"></div>
 
         <!-- CATERING SECTION -->
-        <section class="section-catering parallax-transition parallax-transition--catering-burger">
+        <section class="section-catering parallax-transition parallax-transition--catering-burger" id="catering-and-contact">
             <div class="section-catering__text-box">
                 <h3 class="heading-main heading-main--white margin-bottom-small">Catering & Contact</h3>
                 <p class="paragraph paragraph--white paragraph--bold margin-top-small">Looking to cater your next party?</p>
@@ -266,5 +266,7 @@
             </div>
         </section>
     </main>
+    
+    <script src="scripts.js"></script>
 </body>
 </html>
