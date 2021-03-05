@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/tslilpress/tgiv/issues"
   },
-  "homepage": "https://github.com/tslilpress/tgiv#readme",
+  "homepage": "https://github.com/tslilpress/tgiv",
   "devDependencies": {
     "autoprefixer": "^7.1.4",
     "concat": "^1.0.3",
