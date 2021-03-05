@@ -155,7 +155,7 @@ body {
   display: flex;
   justify-content: center;
   height: 100vh;
-  background-image: url("../../img/tgiv-header-pic-1.jpg");
+  background-image: url("./../img/tgiv-header-pic-1.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
   .header__text-box {
@@ -258,11 +258,11 @@ body {
   background-attachment: fixed;
   display: flex; }
   .parallax-transition--donuts {
-    background-image: url("../../img/donuts.jpg"); }
+    background-image: url("./../img/donuts.jpg"); }
   .parallax-transition--fried {
-    background-image: url("../../img/fried.jpg"); }
+    background-image: url("./../img/fried.jpg"); }
   .parallax-transition--catering-burger {
-    background-image: url("../../img/catering-burger.jpg"); }
+    background-image: url("./../img/catering-burger.jpg"); }
 
 .top-bar {
   display: flex;
@@ -312,7 +312,7 @@ body {
     background-color: var(--color-blue); }
   .section-about__image {
     width: 50%;
-    background-image: url("../../img/sandwich-about.jpg");
+    background-image: url("./../img/sandwich-about.jpg");
     background-position: center; }
 
 .section-menu {

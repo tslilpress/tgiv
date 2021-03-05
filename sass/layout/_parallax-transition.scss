@@ -6,14 +6,14 @@
     display: flex;
 
     &--donuts {
-        background-image: url("../../img/donuts.jpg");
+        background-image: url("./../img/donuts.jpg");
     }
 
     &--fried {
-        background-image: url("../../img/fried.jpg");
+        background-image: url("./../img/fried.jpg");
     }
 
     &--catering-burger {
-        background-image: url("../../img/catering-burger.jpg");
+        background-image: url("./../img/catering-burger.jpg");
     }
 }
