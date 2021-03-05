@@ -10,3 +10,5 @@ for(i = 0; i < menuLinks.length; i++) {
     menuLinks[i].addEventListener('click', uncheck)
 }
 
+
+

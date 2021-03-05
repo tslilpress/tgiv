@@ -342,6 +342,8 @@ body {
     font-size: 2.2rem;
     font-weight: 400;
     color: var(--color-brown); }
+    .section-menu__description--dessert {
+      font-size: 1.5rem; }
   .section-menu__price {
     font-size: 1.8rem;
     font-weight: 400;
@@ -351,6 +353,10 @@ body {
     flex-direction: column; }
   .section-menu__choice-box {
     display: flex;
+    justify-content: space-around; }
+  .section-menu__dessert-container {
+    display: flex;
+    flex-direction: row;
     justify-content: space-around; }
 
 .section-pick-up-info {
