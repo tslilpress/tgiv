@@ -11,7 +11,7 @@ for(i = 0; i < menuLinks.length; i++) {
 }
 
 
-// FADE IN SECTION ON SCROLL 
+// FADE IN SECTIONS ON SCROLL 
 
 const fades = document.querySelectorAll('.fade-in')
 
@@ -32,5 +32,3 @@ const fadeInOnScroll = new IntersectionObserver(function(
 fades.forEach(fade => {
     fadeInOnScroll.observe(fade)
 })
-
-

@@ -47,6 +47,9 @@ html {
       font-size: 75%; } }
 
 body {
+  background-color: var(--color-pinks); }
+
+body {
   font-family: 'Josefin Slab', serif;
   font-weight: 400; }
 
