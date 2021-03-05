@@ -1,9 +1,8 @@
-@keyframes navDrop{
-    0% {
-        transform: translateY(100rem)
-    }
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
 
-    100% {
-        transform: translateY(0)
-    }
+.fade-in.appear {
+    opacity: 1;
 }

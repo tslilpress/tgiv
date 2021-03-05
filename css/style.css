@@ -14,6 +14,13 @@ $breakpoint arguement choices:
 - tab-land
 - big-desktop
 */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in; }
+
+.fade-in.appear {
+  opacity: 1; }
+
 :root {
   --color-pink: #fcd9dc;
   --color-brown:#595719;
