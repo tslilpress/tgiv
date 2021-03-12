@@ -27,7 +27,7 @@ $breakpoint arguement choices:
     }
 
     @if $breakpoint == tab-port {
-        @media only screen and (max-width: 56.25em) { @content }; //900px
+        @media only screen and (max-width: 51.25em) { @content }; //820px
     }
 
     @if $breakpoint == tab-land {

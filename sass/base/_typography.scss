@@ -8,12 +8,20 @@ body {
     font-weight: 700;
     font-size: 10rem;
     color: #fff;
+
+    @include respond(tab-port) {
+        font-size: 6rem;
+    }
 }
 
 .heading-secondary {
     font-size: 3rem;
     color: #fff;
     font-weight: 700;
+
+    @include respond(tab-port) {
+        font-size: 2rem;
+    }
 }
 
 .heading-main {
@@ -31,6 +39,11 @@ body {
 
     &--brown {
         color: var(--color-brown);
+        margin-top: 10rem;
+        
+        @include respond(tab-port) {
+            margin-top: 6rem;
+        }
     }
 }
 

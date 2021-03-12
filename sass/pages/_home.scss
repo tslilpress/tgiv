@@ -11,6 +11,11 @@
     display: flex;
     height: 75vh;
 
+    @include respond(tab-port) {
+        flex-direction: column;
+        height: 120vh;
+    }
+
     &__text-box {
         display: flex;
         flex-direction: column;
@@ -19,12 +24,23 @@
         padding: 10%;
         width: 50%;
         background-color: var(--color-blue);
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
     }
 
     &__image {
         width: 50%;
+        height: 100%;
         background-image: url("./../img/sandwich-about.jpg");
         background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        @include respond(tab-port) {
+            width: 100%;
+        }
     }
 }
 
@@ -121,11 +137,22 @@
 .section-hours-location {
     height: 100vh;
     display: flex;
+
+    @include respond(tab-port) {
+       height: 140vh;
+       flex-direction: column-reverse;
+    }
     
 
     &__gmap {
+        display: flex;
         width: 50%;
         height: 100%;
+
+        @include respond(tab-port) {
+            width: 100%;
+            height: 70%;
+        }
     }
 
     &__text-box {
@@ -133,6 +160,11 @@
         height: 100%;
         background-color: var(--color-pink);
         text-align: center;
+
+        @include respond(tab-port) {
+            width: 100%;
+            height: 90%;
+        }
     }
 
     &__hours {
