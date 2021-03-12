@@ -120,6 +120,7 @@ body {
   margin-top: 10rem; }
 
 .btn, .btn:link, .btn:visited {
+  position: relative;
   display: inline-block;
   width: 17rem;
   padding: 1.5rem 2.5rem 1rem;
@@ -164,10 +165,11 @@ body {
 .header {
   display: flex;
   justify-content: center;
-  height: 100vh;
-  position: relative;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  height: 100vh; }
+  .header__header-slideshow {
+    position: relative;
+    height: 100vh;
+    background-color: transparent; }
   .header__slideshow-img {
     position: absolute;
     top: 0;
@@ -187,7 +189,7 @@ body {
 .navigation {
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: relative;
   width: 100vw;
   background-color: var(--color-pink); }
   .navigation__checkbox {
