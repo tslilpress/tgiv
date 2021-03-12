@@ -52,18 +52,32 @@
     &__container {
         display: flex;
         justify-content: space-around;
+
+        @include respond(tab-port-small) {
+            flex-direction: column;
+            justify-content: center;
+        }
     }
     
     &__starters {
        display: flex;
        flex-direction: column;
        width: 40vw;
+
+        @include respond(tab-port-small) {
+            width: 100vw;
+        }
     }
 
     &__mains {
        display: flex;
        flex-direction: column;
        width: 40vw;
+
+        @include respond(tab-port-small) {
+            width: 100vw;
+            margin-top: 3rem;
+        }
     }
 
 
@@ -88,6 +102,10 @@
 
         &--dessert {
             font-size: 1.5rem;
+        }
+
+        @include respond(tab-port-small) {
+            padding: 2rem;
         }
     }
 

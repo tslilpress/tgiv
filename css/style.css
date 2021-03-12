@@ -80,7 +80,7 @@ body {
         margin-top: 6rem; } }
 
 .heading-main-secondary {
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-family: 'Josefin Slab', serif;
   font-weight: 700; }
   .heading-main-secondary--blue {
@@ -361,14 +361,25 @@ body {
   .section-menu__container {
     display: flex;
     justify-content: space-around; }
+    @media only screen and (max-width: 43.75em) {
+      .section-menu__container {
+        flex-direction: column;
+        justify-content: center; } }
   .section-menu__starters {
     display: flex;
     flex-direction: column;
     width: 40vw; }
+    @media only screen and (max-width: 43.75em) {
+      .section-menu__starters {
+        width: 100vw; } }
   .section-menu__mains {
     display: flex;
     flex-direction: column;
     width: 40vw; }
+    @media only screen and (max-width: 43.75em) {
+      .section-menu__mains {
+        width: 100vw;
+        margin-top: 3rem; } }
   .section-menu__list {
     list-style: none; }
   .section-menu__item {
@@ -383,6 +394,9 @@ body {
     color: var(--color-brown); }
     .section-menu__description--dessert {
       font-size: 1.5rem; }
+    @media only screen and (max-width: 43.75em) {
+      .section-menu__description {
+        padding: 2rem; } }
   .section-menu__price {
     font-size: 1.8rem;
     font-weight: 400;
