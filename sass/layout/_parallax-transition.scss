@@ -4,6 +4,8 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
+    background-position: center;
+    
 
     &--donuts {
         background-image: url("./../img/donuts.jpg");

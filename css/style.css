@@ -123,6 +123,9 @@ body {
 .margin-top-lg {
   margin-top: 10rem; }
 
+.padding-small {
+  padding: 2rem; }
+
 .btn, .btn:link, .btn:visited {
   position: relative;
   display: inline-block;
@@ -282,7 +285,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  display: flex; }
+  display: flex;
+  background-position: center; }
   .parallax-transition--donuts {
     background-image: url("./../img/donuts.jpg"); }
   .parallax-transition--fried {
@@ -357,7 +361,8 @@ body {
 .section-menu {
   text-align: center;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  background-color: #fff; }
   .section-menu__container {
     display: flex;
     justify-content: space-around; }
@@ -383,7 +388,7 @@ body {
   .section-menu__list {
     list-style: none; }
   .section-menu__item {
-    line-height: 4vh; }
+    line-height: 3rem; }
   .section-menu__title {
     font-size: 2.8rem;
     color: var(--color-blue);
@@ -396,7 +401,7 @@ body {
       font-size: 1.5rem; }
     @media only screen and (max-width: 43.75em) {
       .section-menu__description {
-        padding: 2rem; } }
+        padding: 0 2rem 0 2rem; } }
   .section-menu__price {
     font-size: 1.8rem;
     font-weight: 400;
@@ -411,15 +416,19 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around; }
+    @media only screen and (max-width: 43.75em) {
+      .section-menu__dessert-container {
+        flex-direction: column; } }
 
 .section-pick-up-info {
   width: 100vw;
-  height: 15vh;
+  height: 12rem;
   background-color: var(--color-blue);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding: 2rem; }
   .section-pick-up-info__link, .section-pick-up-info:link, .section-pick-up-info:visited {
     color: #fff;
     font-size: 2rem;
