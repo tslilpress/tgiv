@@ -47,7 +47,7 @@ html {
       font-size: 75%; } }
 
 body {
-  background-color: var(--color-pinks); }
+  background-color: var(--color-pink); }
 
 body {
   font-family: 'Josefin Slab', serif;
@@ -165,9 +165,19 @@ body {
   display: flex;
   justify-content: center;
   height: 100vh;
-  background-image: url("./../img/tgiv-header-pic-1.jpg");
+  position: relative;
   background-size: cover;
   background-repeat: no-repeat; }
+  .header__slideshow-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; }
   .header__text-box {
     display: flex;
     flex-direction: column;

@@ -32,3 +32,29 @@ const fadeInOnScroll = new IntersectionObserver(function(
 fades.forEach(fade => {
     fadeInOnScroll.observe(fade)
 })
+
+
+// HEADER SLIDESHOW 
+
+const slideshowImages = document.querySelectorAll(".header .header__slideshow-img")
+// console.log(slideshowImages)
+
+const intervalDelay = 3000;
+
+let currentImageNumber = 0
+
+slideshowImages[currentImageNumber].style.opacity = 1
+
+setInterval(nextImage, intervalDelay)
+
+function nextImage() {
+    const tempImageNumber = currentImageNumber
+    setTimeout(() => {
+        slideshowImages[tempImageNumber].style.opacity = 0
+    }, 1500)
+    currentImageNumber = (currentImageNumber + 1) % slideshowImages.length
+    // console.log(currentImageNumber)
+    slideshowImages[currentImageNumber].style.opacity = 1
+
+}
+
