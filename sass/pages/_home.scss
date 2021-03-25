@@ -232,12 +232,45 @@
             font-weight: 700;
             margin-top: 1rem;
 
+    }
+
 }
 
 .section-bottom-contact {
-    width: 100vw;
-    height: 50vh;
-    background-color: orange;
-}
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+
+    @include respond(phone) {
+        display: flex;
+     }
+
+
+    &__phone {
+        background-color: var(--color-blue);
+        margin-bottom: .2rem;
+    }
+
+    &__address {
+        background-color: var(--color-blue);
+    }
+
+    &__link,
+    &:link,
+    &:visited {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 3.5rem;
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+        align-self: center;
+        text-decoration: none;
+        color: #fff;
+    }
 
 }

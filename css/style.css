@@ -489,7 +489,30 @@ body {
     text-decoration: none;
     font-weight: 700;
     margin-top: 1rem; }
-  .section-catering .section-bottom-contact {
+
+.section-bottom-contact {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0; }
+  @media only screen and (max-width: 33.125em) {
+    .section-bottom-contact {
+      display: flex; } }
+  .section-bottom-contact__phone {
+    background-color: var(--color-blue);
+    margin-bottom: .2rem; }
+  .section-bottom-contact__address {
+    background-color: var(--color-blue); }
+  .section-bottom-contact__link, .section-bottom-contact:link, .section-bottom-contact:visited {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100vw;
-    height: 50vh;
-    background-color: orange; }
+    height: 3.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    align-self: center;
+    text-decoration: none;
+    color: #fff; }
