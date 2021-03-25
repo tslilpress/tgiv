@@ -311,6 +311,9 @@ body {
     padding: 0 2rem;
     margin-left: 1rem;
     color: var(--color-blue); }
+    @media only screen and (max-width: 33.125em) {
+      .top-bar__info-box {
+        display: none; } }
   .top-bar__icon-box {
     display: flex;
     padding: 0 2rem;
@@ -486,3 +489,7 @@ body {
     text-decoration: none;
     font-weight: 700;
     margin-top: 1rem; }
+  .section-catering .section-bottom-contact {
+    width: 100vw;
+    height: 50vh;
+    background-color: orange; }
